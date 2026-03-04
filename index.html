@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Krishna Heritage Hotel</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
@@ -12,12 +14,35 @@
 body{
 margin:0;
 font-family:Inter, sans-serif;
-color:#333;
 background:#fafafa;
+color:#333;
 }
 
 h1,h2,h3{
 font-family:"Playfair Display",serif;
+}
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 40px;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo{
+font-size:26px;
+}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+color:#333;
+font-weight:600;
 }
 
 .container{
@@ -26,61 +51,33 @@ margin:auto;
 padding:60px 20px;
 }
 
-.hero{
-height:90vh;
-background-image:url("https://images.unsplash.com/photo-1582719508461-905c673771fd");
-background-size:cover;
-background-position:center;
-display:flex;
-align-items:center;
-justify-content:center;
+.intro{
 text-align:center;
-color:white;
-}
-
-.hero h1{
-font-size:60px;
-background:rgba(0,0,0,0.4);
-padding:25px 40px;
-border-radius:8px;
-}
-
-nav{
-background:white;
-padding:15px;
-text-align:center;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-position:sticky;
-top:0;
-}
-
-nav a{
-margin:0 20px;
-text-decoration:none;
-color:#333;
-font-weight:600;
+max-width:700px;
+margin:auto;
 }
 
 .rooms{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 gap:30px;
+margin-top:40px;
 }
 
 .room{
 background:white;
 border-radius:10px;
 overflow:hidden;
-box-shadow:0 5px 20px rgba(0,0,0,0.08);
+box-shadow:0 6px 20px rgba(0,0,0,0.08);
 }
 
 .room img{
 width:100%;
-height:200px;
+height:220px;
 object-fit:cover;
 }
 
-.room-content{
+.room-info{
 padding:20px;
 }
 
@@ -99,18 +96,16 @@ border-radius:8px;
 background:#2f6f5e;
 color:white;
 text-align:center;
-padding:70px 20px;
+padding:60px 20px;
 }
 
 .button{
-display:inline-block;
 background:white;
 color:#2f6f5e;
 padding:14px 24px;
 border-radius:6px;
 text-decoration:none;
 font-weight:600;
-margin-top:15px;
 }
 
 footer{
@@ -120,63 +115,86 @@ text-align:center;
 padding:30px;
 }
 
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+padding:14px 18px;
+border-radius:40px;
+text-decoration:none;
+font-weight:bold;
+}
+
 </style>
+
 </head>
 
 <body>
 
-<div class="hero">
-<h1>Krishna Heritage Hotel</h1>
+<header class="header">
+
+<div class="logo">
+Krishna Heritage Hotel
 </div>
 
 <nav>
 <a href="#about">About</a>
 <a href="#rooms">Rooms</a>
 <a href="#gallery">Gallery</a>
-<a href="#contact">Contact</a>
+<a href="#contact">Book</a>
 </nav>
 
-<section id="about" class="container">
-<h2>Welcome</h2>
+</header>
+
+<section class="container intro" id="about">
+
+<h2>A Peaceful Heritage Stay</h2>
+
 <p>
-A peaceful heritage stay offering comfort, warm hospitality and a relaxing atmosphere.  
-Whether you are travelling for leisure or business, Krishna Heritage Hotel provides a memorable experience.
+Experience warm hospitality and comfortable rooms in a relaxing environment.  
+Krishna Heritage Hotel offers a quiet retreat for travellers seeking comfort and simplicity.
 </p>
+
 </section>
 
-<section id="rooms" class="container">
+<section class="container" id="rooms">
+
 <h2>Our Rooms</h2>
 
 <div class="rooms">
 
 <div class="room">
 <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427">
-<div class="room-content">
+<div class="room-info">
 <h3>Deluxe Room</h3>
-<p>Elegant and comfortable with modern amenities.</p>
+<p>Elegant room with modern comforts.</p>
 </div>
 </div>
 
 <div class="room">
 <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a">
-<div class="room-content">
+<div class="room-info">
 <h3>Family Suite</h3>
-<p>Spacious suite ideal for families and groups.</p>
+<p>Spacious suite for families.</p>
 </div>
 </div>
 
 <div class="room">
 <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32">
-<div class="room-content">
+<div class="room-info">
 <h3>Standard Room</h3>
-<p>Simple, cozy and affordable stay.</p>
+<p>Comfortable and affordable stay.</p>
 </div>
 </div>
 
 </div>
+
 </section>
 
-<section id="gallery" class="container">
+<section class="container" id="gallery">
+
 <h2>Gallery</h2>
 
 <div class="gallery">
@@ -190,21 +208,27 @@ Whether you are travelling for leisure or business, Krishna Heritage Hotel provi
 
 </section>
 
-<section id="contact" class="cta">
+<section class="cta" id="contact">
 
 <h2>Book Your Stay</h2>
 
 <p>Contact us directly for reservations.</p>
 
 <a class="button" href="https://wa.me/91XXXXXXXXXX">
-Book via WhatsApp
+Book on WhatsApp
 </a>
 
 </section>
 
 <footer>
+
 <p>© 2026 Krishna Heritage Hotel</p>
+
 </footer>
+
+<a class="whatsapp" href="https://wa.me/91XXXXXXXXXX">
+WhatsApp
+</a>
 
 </body>
 </html>
