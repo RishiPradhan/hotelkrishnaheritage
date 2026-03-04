@@ -127,9 +127,64 @@ text-decoration:none;
 font-weight:bold;
 }
 
+.menu-toggle{
+display:none;
+font-size:26px;
+cursor:pointer;
+}
+
+nav{
+display:flex;
+}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+color:#333;
+font-weight:600;
+}
+
+/* Mobile layout */
+
+@media (max-width:768px){
+
+.menu-toggle{
+display:block;
+}
+
+nav{
+display:none;
+flex-direction:column;
+position:absolute;
+top:70px;
+right:0;
+background:white;
+width:200px;
+box-shadow:0 4px 15px rgba(0,0,0,0.15);
+}
+
+nav a{
+margin:15px;
+}
+
+nav.show{
+display:flex;
+}
+
+}
+  
 </style>
 
 </head>
+
+<script>
+
+function toggleMenu(){
+const menu = document.getElementById("nav-menu");
+menu.classList.toggle("show");
+}
+
+</script>
 
 <body>
 
@@ -139,7 +194,11 @@ font-weight:bold;
 Krishna Heritage Hotel
 </div>
 
-<nav>
+<div class="menu-toggle" onclick="toggleMenu()">
+
+</div>
+
+<nav id="nav-menu">
 <a href="#about">About</a>
 <a href="#rooms">Rooms</a>
 <a href="#gallery">Gallery</a>
@@ -147,7 +206,6 @@ Krishna Heritage Hotel
 </nav>
 
 </header>
-
 <section class="container intro" id="about">
 
 <h2>A Peaceful Heritage Stay</h2>
