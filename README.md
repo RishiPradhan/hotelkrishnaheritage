@@ -1,4 +1,4 @@
 # hotelkrishnaheritage
 Hotel Krishna Heritage
 
-[Hotel Krishna Heritage](krishnaheritagehotel.in)
+[Hotel Krishna Heritage](https://www.krishnaheritagehotel.in)
