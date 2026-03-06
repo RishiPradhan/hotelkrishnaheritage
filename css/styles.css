@@ -314,6 +314,8 @@ nav {
     margin: 10px 0;
     color: rgb(84, 141, 212);
     /* color:#2f6f5e; */
+    display: flex;
+    flex-direction: column;
 }
 
 .room-details ul {
@@ -403,6 +405,8 @@ nav {
 span.room-option {
     font-size: small;
     color: #17365d;
+    margin-bottom: -10px;
+
 }
 
 
@@ -579,4 +583,5 @@ h2 {
 
 .skip-link:focus {
     top: 10px;
+
 }
