@@ -645,7 +645,7 @@ RESPONSIVE
   } 
 
   section {
-  scroll-margin-top: 100px;
+  scroll-margin-top: 25px;
   }
 }
 
@@ -662,6 +662,7 @@ section {
 .header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
+
 
 
 
