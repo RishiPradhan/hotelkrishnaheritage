@@ -9,23 +9,6 @@
       Marg
     </title>
 
-    <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17999131102"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-  gtag('config', 'AW-17999131102');
-  </script>
-
-
-    <link rel="icon" href="favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400;600&display=swap"
       rel="stylesheet"
@@ -36,17 +19,22 @@
     <link rel="stylesheet" href="css/styles.css" />
 
     <script type="application/ld+json">
-            {
+            <script type="application/ld+json">
+              {
               "@context": "https://schema.org",
               "@type": "Hotel",
               "name": "Hotel Krishna Heritage",
+              "image"="https://krishnaheritagehotel.in/img/deluxe-room-1.webp"
+
+              "url": "https://krishnaheritagehotel.in",
               "address": {
-                "@type": "Arithang",
+                "@type": "PostalAddress",
+                "streetAddress": "Arithang",
                 "addressLocality": "Gangtok",
                 "addressCountry": "India"
-              },
-              "url": "https://krishnaheritagehotel.in"
+              }
             }
+
 
             {
           "@context": "https://schema.org",
@@ -153,6 +141,15 @@
       }
     </script>
 
+    <meta property="og:type" content="website" />
+
+    <meta property="og:url" content="https://krishnaheritagehotel.in" />
+
+    <meta
+      property="og:image"
+      content="https://krishnaheritagehotel.in/img/deluxe-room-1.webp"
+    />
+
     <meta
       name="description"
       content="Hotel Krishna Heritage offers comfortable rooms located near MG Marg. 
@@ -169,15 +166,6 @@
       content="Enjoy a peaceful stay near Gangtok with scenic Himalayan views, comfortable rooms and easy access to popular attractions."
     />
 
-    <meta property="og:type" content="website" />
-
-    <meta property="og:url" content="https://krishnaheritagehotel.in" />
-
-    <meta
-      property="og:image"
-      content="https://krishnaheritagehotel.in/img/hotel-facade-2.webp"
-    />
-
     <meta name="twitter:card" content="summary_large_image" />
 
     <meta
@@ -192,7 +180,7 @@
 
     <meta
       name="twitter:image"
-      content="https://krishnaheritagehotel.in/img/hotel-facade-2.webp"
+      content="https://krishnaheritagehotel.in/img/deluxe-room-1.webp"
     />
   </head>
 
@@ -221,13 +209,11 @@
         <a href="#faq">FAQ</a>
         <a href="#gangtok-guide">Guide</a>
         <a href="#contact">Contact</a>
-
-        <a href="#footer">Book</a>
       </nav>
     </header>
 
-    <main id="main-content" role="main">
-      <section class="container intro" id="about">
+    <section class="hero">
+      <div class="hero-content">
         <h2>A Peaceful and Comfortable Stay</h2>
 
         <p>
@@ -235,7 +221,21 @@
           environment. Hotel Krishna Heritage offers a quiet retreat for
           travellers seeking comfort and simplicity.
         </p>
-      </section>
+
+        <a href="#contact" class="hero-btn">Book Your Stay</a>
+      </div>
+    </section>
+
+    <main id="main-content" role="main">
+      <!-- <section class="container intro" id="about">
+        <h2>A Peaceful and Comfortable Stay</h2>
+
+        <p>
+          Experience warm hospitality and comfortable rooms in a relaxing
+          environment. Hotel Krishna Heritage offers a quiet retreat for
+          travellers seeking comfort and simplicity.
+        </p>
+      </section> -->
 
       <section class="container" id="rooms">
         <h2>Rooms & Tariff</h2>
@@ -250,7 +250,8 @@
             <div class="room-details">
               <h3>Deluxe Room</h3>
 
-              <p class="room-price">₹1500 / night
+              <p class="room-price">
+                ₹1500 / night
                 <span class="room-option"><em>Only Room</em></span>
               </p>
               <p class="room-price">
@@ -267,7 +268,6 @@
                   class="book-button-rev"
                   href="https://wa.me/919832454668"
                   aria-label="Contact Hotel Krishna Heritage via WhatsApp"
-                  role="button"
                 >
                   Book Now
                 </a>
@@ -284,9 +284,9 @@
             <div class="room-details">
               <h3>Family Room</h3>
 
-              <p class="room-price">₹2800 / night
+              <p class="room-price">
+                ₹2800 / night
                 <span class="room-option"><em>Only Room</em></span>
-
               </p>
               <p class="room-price">
                 ₹3100 / night
@@ -301,7 +301,6 @@
                   class="book-button-rev"
                   href="https://wa.me/919832454668"
                   aria-label="Contact Hotel Krishna Heritage via WhatsApp"
-                  role="button"
                 >
                   Book Now
                 </a>
@@ -314,43 +313,43 @@
       <section class="container" id="amenities">
         <h2>Hotel Amenities</h2>
 
-        <div class="amenities-grid" role="list">
-          <div class="amenity" role="listitem">
+        <div class="amenities-grid">
+          <div class="amenity">
             <span class="icon">📶</span>
             <p>Free Wi-Fi</p>
           </div>
 
-          <div class="amenity" role="listitem">
+          <div class="amenity">
             <span class="icon">🚗</span>
             <p>Parking Available</p>
           </div>
 
-          <div class="amenity" role="listitem">
+          <div class="amenity">
             <span class="icon">🍳</span>
             <p>Meals Available</p>
           </div>
 
-          <div class="amenity" role="listitem">
+          <div class="amenity">
             <span class="icon">🧹</span>
             <p>Daily Housekeeping</p>
           </div>
 
-          <div class="amenity" role="listitem">
+          <div class="amenity">
             <span class="icon">🛏️</span>
             <p>Comfortable Beds</p>
           </div>
 
-          <div class="amenity" role="listitem">
+          <div class="amenity">
             <span class="icon">🌄</span>
             <p>Scenic Views</p>
           </div>
 
-          <div class="amenity" role="listitem">
+          <div class="amenity">
             <span class="icon">👪</span>
             <p>Family Friendly</p>
           </div>
 
-          <div class="amenity" role="listitem">
+          <div class="amenity">
             <span class="icon">📍</span>
             <p>Near MG Marg</p>
           </div>
@@ -409,9 +408,10 @@
             src="./img/standard-room-3.webp"
             alt="Image of Deluxe Room of Hotel Krishna Heritage in Gangtok, Sikkim"
           />
-        <img
+
+          <img
             src="./img/deluxe-room-8.webp"
-            alt="Image of Deluxe Room of Hotel Krishna Heritage in Gangtok, Sikkim"
+            alt="Image of Deluxe Room 8 of Hotel Krishna Heritage in Gangtok, Sikkim"
           />
         </div>
       </section>
@@ -492,7 +492,7 @@
           </button>
           <div class="faq-answer" role="region">
             <p>
-              You can book a room by contacting us through WhatsApp or by
+              YYou can book a room by contacting us through WhatsApp or by
               calling the hotel directly. Advance payments can be made using
               UPI.
             </p>
@@ -519,7 +519,7 @@
           </button>
           <div class="faq-answer" role="region">
             <p>
-              Most visitors spend 2–3 days exploring Gangtok. This allows time
+              PMost visitors spend 2–3 days exploring Gangtok. This allows time
               to visit MG Marg, Tsomgo Lake, Nathula Pass and nearby
               monasteries.
             </p>
@@ -583,7 +583,7 @@
             <p>
               💬 WhatsApp:
               <a
-                href="https://wa.me/919832454668"
+                href="https://wa.me/91XXXXXXXXXX"
                 aria-label="Contact Hotel Krishna Heritage by WhatsApp"
                 >Chat on WhatsApp</a
               >
@@ -689,7 +689,7 @@
       <section class="cta" id="contact">
         <h2>Book directly for better deals!</h2>
 
-        <a type="button" class="book-button" href="https://wa.me/919832454668" role="button">
+        <a type="button" class="book-button" href="https://wa.me/919832454668">
           Book Now
         </a>
       </section>
@@ -707,7 +707,7 @@
 
         <div class="footer-col">
           <h4>Quick Links</h4>
-          <ul role="navigation">
+          <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#rooms">Rooms</a></li>
             <li><a href="#amenities">Amenities</a></li>
@@ -720,7 +720,7 @@
           <p>📍 Arithang Gangtok, Sikkim</p>
           <p>
             📞
-            <a href="tel:+919832454668" aria-label="Call Hotel Krishna Heritage"
+            <a href="tel:+91694608703" aria-label="Call Hotel Krishna Heritage"
               >+91 6294-608-703</a
             >
           </p>
@@ -753,20 +753,10 @@
         class="opacilty-1"
         href="tel:+919832454668"
         aria-label="Call Hotel Krishna Heritage"
-        ><img src="img/icons8-phone-48.png" alt="Phone logo"
+        ><img src="img/icons8-phone-48.png"
       /></a>
     </div>
 
     <script src="index.js"></script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
