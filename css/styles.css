@@ -20,7 +20,7 @@ h3 {
 }
 
 section {
-  scroll-margin-top: 120px;
+  scroll-margin-top: 100px;
 }
 
 h2 {
@@ -718,3 +718,4 @@ section {
 .sticky-book {
   animation: slideUp 0.4s ease;
 }
+
